@@ -1,0 +1,39 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Bob Johnson",
+    "email": "bob123@example.com",
+    "password": "Bob@123"
+}
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "john123@example.com",
+    "password": "John@123"
+}
+###
+
+POST  http://localhost:5000/api/records/create-record
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDI5Nzc5NzZjOTRiYTJjZjUzMjE5MCIsInJvbGUiOiJ2aWV3ZXIiLCJpYXQiOjE3NzU0MTA5MzUsImV4cCI6MTc3NTQ5NzMzNX0.hu0tbQQ-VM3PAsXAIzBD3bGcZYrHE_ex-V21fiQtyNo
+Content-Type: application/json
+
+{
+    "amount": "20000",
+    "category": "salary",
+    "type": "income",
+    "note": "Salary Credited",
+    "date": "2026-03-01"
+}
+###
+
+GET http://localhost:5000/api/records
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDI5Nzc5NzZjOTRiYTJjZjUzMjE5MCIsInJvbGUiOiJ2aWV3ZXIiLCJpYXQiOjE3NzU0MTA5MzUsImV4cCI6MTc3NTQ5NzMzNX0.hu0tbQQ-VM3PAsXAIzBD3bGcZYrHE_ex-V21fiQtyNo
+###
+
+GET http://localhost:5000/api/records/69d29f7e2e0b6ad94140f5bd
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDI5Nzc5NzZjOTRiYTJjZjUzMjE5MCIsInJvbGUiOiJ2aWV3ZXIiLCJpYXQiOjE3NzU0MTA5MzUsImV4cCI6MTc3NTQ5NzMzNX0.hu0tbQQ-VM3PAsXAIzBD3bGcZYrHE_ex-V21fiQtyNo
+###
