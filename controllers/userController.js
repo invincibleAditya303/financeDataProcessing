@@ -1,15 +1,14 @@
-const { request } = require('express')
 const RoleRequest = require('../models/RoleRequest')
 const User = require('../models/User')
 
 // Role change Request
 exports.requetsRole = async (request, response) => {
     try {
-        const {requetsRole, reason} = request.body
+        const {requestedRole, reason} = request.body
 
         const requestAccess = await RoleRequest.create({
             user: request.user.id,
-            requetsRole,
+            requestedRole,
             reason
         })
 

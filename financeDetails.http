@@ -37,3 +37,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDI5Nzc5N
 GET http://localhost:5000/api/records/69d29f7e2e0b6ad94140f5bd
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDI5Nzc5NzZjOTRiYTJjZjUzMjE5MCIsInJvbGUiOiJ2aWV3ZXIiLCJpYXQiOjE3NzU0MTA5MzUsImV4cCI6MTc3NTQ5NzMzNX0.hu0tbQQ-VM3PAsXAIzBD3bGcZYrHE_ex-V21fiQtyNo
 ###
+
+POST http://localhost:5000/api/role
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDI5Nzc5NzZjOTRiYTJjZjUzMjE5MCIsInJvbGUiOiJ2aWV3ZXIiLCJpYXQiOjE3NzU0MTA5MzUsImV4cCI6MTc3NTQ5NzMzNX0.hu0tbQQ-VM3PAsXAIzBD3bGcZYrHE_ex-V21fiQtyNo
+Content-Type: application/json
+
+{
+    "requestedRole": "analyst",
+    "reason": "To know income and expense disparities"
+}
+###
