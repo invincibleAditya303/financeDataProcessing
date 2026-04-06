@@ -130,7 +130,7 @@ npm install
 ## API Endpoints
 
   ### Auth
-  |-----|------------------|
+  |_____|__________________|
   |POST |/api/auth/regitser|
   |POST |/api/auth/login   |
 
