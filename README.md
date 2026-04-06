@@ -134,7 +134,6 @@ npm install
   |Type | API              |
   |-----|------------------|
   |POST |/api/auth/regitser|
-  |-----|------------------|
   |POST |/api/auth/login   |
 
   ### Role Requests
@@ -142,9 +141,7 @@ npm install
   |Type | API         | Description               |
   |-----|-------------|---------------------------|
   |POST |/api/role    |-> Request analyst role    |
-  |-----|-------------|---------------------------|
   |GET  |/api/role    |-> Admin: Gets all requests|
-  |-----|-------------|---------------------------|
   |PATCH|/api/role/:id| -> Admin approve/reject   |
 
   ###  Records
@@ -152,13 +149,9 @@ npm install
   |Type  | API            |
   |------|----------------|
   |POST  |/api/records    |
-  |------|----------------|
   |GET   |/api/records    |
-  |------|----------------|
   |GET   |/api/records/:id|
-  |------|----------------|
   |PATCH |api/records/:id |
-  |------|----------------|
   |DELETE|/api/records/:id|
 
   ### Dashboard
@@ -166,13 +159,9 @@ npm install
   |Type| API                         |
   |----|-----------------------------|
   |GET |/api/dashboard/summary       |
-  |----|-----------------------------|
   |GET |/api/dashboard/category      |
-  |----|-----------------------------|
   |GET |/api/dashboard/trends        |
-  |----|-----------------------------|
   |GET |/api/dashboard/recent        |
-  |----|-----------------------------|
   |GET |/api/dashboard/income-expense|
 
 ---
