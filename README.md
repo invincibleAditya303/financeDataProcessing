@@ -134,7 +134,6 @@ npm install
   |POST |/api/auth/regitser|
   |-----|------------------|
   |POST |/api/auth/login   |
-  |-----|------------------|
 
   ### Role Requests
   POST /api/role -> Request analyst role
