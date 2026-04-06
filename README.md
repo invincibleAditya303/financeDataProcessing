@@ -132,6 +132,7 @@ npm install
   ### Auth
   |-----|------------------|
   |POST |/api/auth/regitser|
+  |-----|------------------|
   |POST |/api/auth/login   |
   |-----|------------------|
 
