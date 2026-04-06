@@ -2,7 +2,7 @@
 A backend system built using **Node.js**, **Express.js** and **MongoDB** that manages financial
 records, user roles and provide analytics for dashboard.
 
-```
+---
 
 ## Project Overview
 This project simulates a finance dashboard system where user can:
@@ -19,7 +19,7 @@ The backend focuses on:
 - Aggregation based analytics
 - Scalable API design
 
-```
+---
 
 ## Features
 
@@ -57,14 +57,14 @@ The backend focuses on:
  - Monthly trends
  - Recent transactions
 
-```
+---
 
 ## Validation & Error Handling
 - Input validation for all APIs
 - Proper status codes
 - Error handling middleware
 
-```
+---
 
 ## Tech Stack
 - Node.js
@@ -104,6 +104,7 @@ financeDataProcessing/
 └── seedAdmin.js
 
 ```
+---
 
 ## Installation & Setup
 
@@ -124,12 +125,14 @@ npm install
    ```
 4. ### Run the Server
    npm run dev
+---
 
 ## API Endpoints
 
   ### Auth
-  POST /api/auth/regitser
-  POST /api/auth/login
+  |-----|------------------|
+  |POST |/api/auth/regitser|
+  |POST |/api/auth/login   |
 
   ### Role Requests
   POST /api/role -> Request analyst role
@@ -150,22 +153,30 @@ npm install
   GET /api/dashboard/recent
   GET /api/dashboard/income-expense
 
+---
+
 ## Assumptions
 - Users can only request analyst role
 - Admin role is maually assigned
 - Each record belongs to a single user
 - Analytics are based on stored transaction dates
 
+---
+
 ## Future Improvements
 - Email approval for role approval
 - Pagination & Search
 - Advanced analytics (Yearly trends)
+
+---
 
 ## Conclusion
 - Backend architecture design
 - Role-based access control
 - Data aggregation & analytics
 - Clean and maintainable code practices
+
+---
 
 ## Author
 Aditya Ammu
